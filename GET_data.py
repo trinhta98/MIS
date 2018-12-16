@@ -533,42 +533,11 @@ for line in open('listID.txt', 'r'):
 # get_info(file_id)
 while True:
     try:
-        try:
-            t1 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
-        try:
-            t2 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
-        try:
-            t3 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
-        try:
-            t4 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
-        try:
-            t5 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
-        try:
-            t6 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
-        try:
-            t7 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
-        try:
-            t8 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
-        try:
-            t9 = threading.Thread(target=get_info, args=(file_id,))
-        except:
-            pass
+		t1 = threading.Thread(target=get_info, args=(file_id,))
+		t2 = threading.Thread(target=get_info, args=(file_id,))
+		t3 = threading.Thread(target=get_info, args=(file_id,))
+		t4 = threading.Thread(target=get_info, args=(file_id,))
+		t5 = threading.Thread(target=get_info, args=(file_id,))
         try:
             t1.start()
             time.sleep(0.5)
@@ -594,34 +563,10 @@ while True:
             time.sleep(0.5)
         except TypeError:
             pass
-        try:
-            t6.start()
-            time.sleep(0.5)
-        except TypeError:
-            pass
-        try:
-            t7.start()
-            time.sleep(0.5)
-        except TypeError:
-            pass
-        try:
-            t8.start()
-            time.sleep(0.5)
-        except TypeError:
-            pass
-        try:
-            t9.start()
-            time.sleep(0.5)
-        except TypeError:
-            pass
         t1.join()
         t2.join()
         t3.join()
         t4.join()
         t5.join()
-        t6.join()
-        t7.join()
-        t8.join()
-        t9.join()
     except:
         pass
